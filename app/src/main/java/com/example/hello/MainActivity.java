@@ -2,6 +2,7 @@ package com.example.hello;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -17,6 +18,9 @@ public class MainActivity extends AppCompatActivity {
     public void sendMessage (View view){
         EditText message= (EditText)findViewById(R.id.message);
         Toast.makeText(this,"Sending message"+message.getText().toString(),Toast.LENGTH_SHORT).show();
-
+        Intent intent=new Intent(this, DisplayMessageActivity.class);
+        intent.putExtra("MESSSAGE",message.getText().toString());
+        startActivity(intent);
+        message.setText("");
     }
 }
