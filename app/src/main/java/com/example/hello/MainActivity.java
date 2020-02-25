@@ -60,6 +60,10 @@ link.setOnClickListener(new View.OnClickListener() {
                 if (intent1.resolveActivity(getPackageManager()) != null) {
                     startActivity(intent1);
                 }
+            case R.id.item3:
+                startActivity(new Intent(this,ViewLists.class));
+                return true;
+
         }
                 return super.onOptionsItemSelected(item);
 

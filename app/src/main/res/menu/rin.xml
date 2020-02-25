@@ -8,4 +8,9 @@
     <item
         android:id="@+id/item2"
         android:title="google" />
+
+    <item
+        android:id="@+id/item3"
+        android:title="List View" />
+
 </menu>
