@@ -105,6 +105,15 @@ private  BroadcastReceiver myReceiver = new  BroadcastReceiver(){
                 startActivity(new Intent(this,ViewLists.class));
                 return true;
 
+            case R.id.item5:
+                startActivity(new Intent(this,Wifi.class));
+                return true;
+
+            case R.id.item6:
+                startActivity(new Intent(this,Internal.class));
+                return true;
+
+
             case R.id.item4:
                 try{
                     int permissionCheck = ContextCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE);
