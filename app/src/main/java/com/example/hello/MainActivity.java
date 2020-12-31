@@ -109,9 +109,13 @@ private  BroadcastReceiver myReceiver = new  BroadcastReceiver(){
                 startActivity(new Intent(this,Wifi.class));
                 return true;
 
-            case R.id.item6:
+
+            case R.id.internal:
                 startActivity(new Intent(this,Internal.class));
-                return true;
+
+
+            case R.id.external:
+                startActivity(new Intent(this,External.class));
 
 
             case R.id.item4:
